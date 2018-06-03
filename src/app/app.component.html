@@ -1,0 +1,407 @@
+<div class="container">
+  <header id="main-header">
+    <div class="row no-gutters">
+      <div class="col-lg-4 col-md-5">
+        <img src="../assets/img/mypicture.png" alt="">
+      </div>
+      <div class="col-lg-8 col-md-7">
+        <div class="d-flex flex-column">
+          <div class="p-5 bg-dark text-white">
+            <div class="name align-items-center d-flex flex-row justify-content-between">
+              <h1 class="display-">Mark Wiliz S. Del Moro</h1>
+              <div>
+                <i class="fab fa-twitter"></i>
+              </div>
+              <div>
+                <i class="fab fa-facebook"></i>
+              </div>
+              <div>
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div>
+                <i class="fab fa-github"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 bg-black">
+            Full Stack Web Developer
+          </div>
+
+          <div>
+            <div class="d-flex flex-row text-white align-items-stretch text-center">
+              <div (click)="seminarsCollapse();" class="port-item p-4 bg-primary">
+                <i class="fa fa-folder-open d-block"></i> Portfolio
+              </div>
+              <div (click)="resumeCollapse();" class="port-item p-4 bg-success">
+                <i class="fa fa-graduation-cap d-block"></i> Resume
+              </div>
+              <div (click)="homeCollapse();" class="port-item p-4 bg-warning" >
+                <i class="fas fa-comment d-block"></i> About
+              </div>
+              <div (click)="contactCollapse();" class="port-item p-4 bg-danger" >
+                <i class="fa fa-envelope d-block"></i> Contact
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div [ngbCollapse]="portfolioToggle" id="work" class="collapse show">
+    <div class="card card-body bg-primary py-5 text-white">
+      <h2>My Portfolio</h2>
+      <!--<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, at.</p>-->
+    </div>
+  
+    <div class="card card-body py-5" id="myBuild">
+      <h3>What have I built?</h3>
+      <p>Check out Some of My works built using MEAN Stack.</p>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <a data-toggle="modal" data-target="#techWorldModal">
+            <img src="../assets/img/TechWorld/Home.png" alt="image" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a data-toggle="modal" data-target="#techCityModal">
+            <img src="../assets/img/TechCity/home.png" alt="image" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a data-toggle="modal" data-target="#techServiceModal">
+            <img src="../assets/img/TechService/home.png" alt="image" class="img-fluid">
+          </a>
+        </div>
+      </div>
+  
+      <br>
+  
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <a data-toggle="modal" data-target="#techGuideModal">
+            <img src="../assets/img/TechGuide/home.png" alt="image" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a data-toggle="modal" data-target="#techBlogModal">
+            <img src="../assets/img/TechBlog/Dashboard.png" alt="image" class="img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div [ngbCollapse]="resumeToggle" id="resume" class="collapse">
+    <div class="card card-body bg-success text-white py-5">
+      <h2>My Resume</h2>
+      <!--<p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, eveniet.</p>-->
+    </div>
+    
+    <div class="card card-body py-5">
+      <h3>Proffesional Skills</h3>
+      <p>Below are my skills rated based from my proficiency level</p>
+      <hr>
+      <div class="input-group">
+        <img src="../assets/img/html.png" alt="Image" class="icon">
+        <h4> HTML5</h4>
+      </div>  
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success" style="width:95%"></div>
+      </div>
+      <div class="input-group">
+        <img src="../assets/img/css.png" alt="Image" class="icon">
+        <h4> CSS3</h4>
+      </div>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success" style="width:90%"></div>
+      </div>
+      <div class="input-group">
+        <img src="../assets/img/sass.png" alt="Image" class="icon">
+        <h4> SASS</h4>
+      </div>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success" style="width:40%"></div>
+      </div>
+      <div class="input-group">
+        <img src="../assets/img/Javascript.png" alt="Image" class="icon">
+        <h4> JavaScript</h4>
+      </div>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success" style="width:50%"></div>
+      </div>
+      <div class="input-group">
+        <img src="../assets/img/typescript.png" alt="Image" class="icon">
+        <h4> TypeScript</h4>
+      </div>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success" style="width:35%"></div>
+      </div>
+      <div class="input-group">
+        <img src="../assets/img/bootstrap.png" alt="Image" class="icon">
+        <h4> Bootstrap</h4>
+      </div>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success" style="width:70%"></div>
+      </div>
+      <div class="input-group">
+        <img src="../assets/img/AngularJS-Logo.png" alt="Image" class="icon">
+        <h4> Angular</h4>
+      </div>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success" style="width:40%"></div>
+      </div>
+      <div class="input-group">
+        <img src="../assets/img/photoshop.png" alt="Image" class="icon">
+        <h4> Photoshop</h4>
+      </div>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success" style="width:50%"></div>
+      </div>
+      <div class="input-group">
+        <img src="../assets/img/express.png" alt="Image" class="icon">
+        <h4> Express.js</h4>
+      </div>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success" style="width:40%"></div>
+      </div>
+      <div class="input-group">
+        <img src="../assets/img/mongo.png" alt="Image" class="icon">
+        <h4> MongoDB</h4>
+      </div>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success" style="width:70%"></div>
+      </div>
+    </div>
+  </div>
+
+  <div [ngbCollapse]="aboutToggle" id="home" class="collapse">
+    <div class="card card-body bg-warning py-5">
+      <h2>About Me</h2>
+      <!--<p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, qui doloribus. Repellat exercitationem corporis repellendus.</p>-->
+    </div>
+
+    <div class="card card-body py-5">
+      <h3>Educational Background</h3>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="card-body py-5">
+            <div class="card text-center select">
+              <div class="card-body">
+                <img src="../assets/img/sti.png" class="img-fluid rounded-circle w-50 mb-3" alt="Image Not Found" />
+                <h2 class="card-title">
+                  STI College San Fernando
+                </h2>
+                <p class="card-text">
+                  Bachelor of Science in Computer Engineering
+                </p>
+                <p>
+                  June 2012 - May 2017
+                </p>
+              </div>
+              <div class="card-footer text-muted">
+                - Graduated with Best Thesis Award
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <div class="card-body py-5">
+            <div class="card text-center select">
+              <div class="card-body">
+                <img src="../assets/img/microcadd.png" alt="Image Not Found" class="img-fluid rounded-circle w-50 mb-3">
+                <h2 class="card-title">
+                  Microcadd Pampanga
+                </h2>
+                <p class="card-text">
+                  AutoCAD 2010 with Color Rendering
+                </p>
+                <p>
+                  May 2010 - June 2010
+                </p>
+              </div>
+              <div class="card-footer text-muted">
+                - Vocational Course
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card card-body py-5">
+      <h3>Trainings and Seminars Attended</h3>
+      <hr>
+      <div class="card-body py-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card-body py-5">
+              <div class="card text-center select">
+                <div class="card-body">
+                  <img src="../assets/img/nexus.png" class="img-fluid rounded-circle w-50 mb-3" alt="Image Not Found" />
+                  <h5 class="card-title">
+                    NEXUS Information Technology Training Center
+                  </h5>
+                  <p class="card-text">
+                    Installing and Configuring Windows Server 2012
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <p>
+                    September 2016
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card-body py-5">
+              <div class="card text-center select">
+                <div class="card-body">
+                  <img src="../assets/img/sti.png" alt="Image Not Found" class="img-fluid rounded-circle w-50 mb-3">
+                  <h4 class="card-title">
+                    STI College San Fernando
+                  </h4>
+                  <p class="card-text">
+                    Robot Programming Using Arduino
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <p>
+                    November 2014
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card-body py-5">
+              <div class="card text-center select">
+                <div class="card-body">
+                  <img src="../assets/img/PHS.png" alt="Image Not Found" class="img-fluid rounded-circle w-50 mb-3">
+                  <h4 class="card-title">
+                    Pampanga High School
+                  </h4>
+                  <p class="card-text">
+                    Internship
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <p>
+                    November 2016 - March 2017
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div [ngbCollapse]="contactToggle" id="contact" class="collapse">
+    <div class="card card-body bg-danger text-white py-5">
+      <h2>Contact Me</h2>
+      <!--<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolorem?</p>-->
+    </div>
+
+    <div class="card card-body py-5">
+      <h3>Get in touch</h3>
+      <p>Feel free to get in touch with me if you have any inquiry by filling out the form below.</p>
+      <form>
+        <div class="form-group">
+          <div class="input-group input-group-lg">
+            <div class="input-group-append">
+              <span class="input-group-text bg-danger text-white">
+                <i class="fa fa-user"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control bg-dark text-white" placeholder="Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group input-group-lg">
+            <div class="input-group-append">
+              <span class="input-group-text bg-danger text-white">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </div>
+            <input type="email" class="form-control bg-dark text-white" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group input-group-lg">
+            <div class="input-group-append">
+              <span class="input-group-text bg-danger text-white">
+                <i class="fas fa-pencil-alt"></i>
+              </span>
+            </div>
+            <textarea class="form-control bg-dark text-white" placeholder="Message" rows="5"></textarea>
+          </div>
+        </div>
+        <input type="submit" value="submit" class="btn btn-danger btn-block btn-lg">
+      </form>
+    </div>
+    <div class="card card-body py-5">
+      <h3>Contact Information</h3>
+      <p>You may also get in touch with me through the information provided below. Thank you!</p>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <div class="input-group input-group-lg">
+              <div class="input-group-append">
+                <span class="input-group-text bg-danger text-white">
+                  Phone:
+                </span>
+              </div>
+              <p class="form-control bg-dark text-white" placeholder="Message">09972762894</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-lg">
+              <div class="input-group-append">
+                <span class="input-group-text bg-danger text-white">
+                  Email:
+                </span>
+              </div>
+              <p class="form-control bg-dark text-white" placeholder="Message">markwilizdelmoro@gmail.com</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-lg">
+              <div class="input-group-append">
+                <span class="input-group-text bg-danger text-white">
+                  Address:
+                </span>
+              </div>
+              <p class="form-control bg-dark text-white" placeholder="Message">Mt. View Gatiawin, Arayat, Pampanga</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+
+  <footer id="main-footer" class="p-5 bg-dark text-white">
+    <div class="row">
+      <div class="col-md-9" >
+        <a href="https://drive.google.com/file/d/1U_5nTjv5S-kDTnZSpbDsd1g4NBBuPJp_/view" target="_blank" class="btn btn-outline-light">
+          <i class="fa fa-cloud"></i> Download Resume</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<app-tech-world-modal></app-tech-world-modal>
+<app-tech-city-modal></app-tech-city-modal>
+<app-tech-service-modal></app-tech-service-modal>
+<app-tech-guide-modal></app-tech-guide-modal>
+<app-tech-blog-modal></app-tech-blog-modal>

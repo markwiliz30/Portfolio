@@ -1,0 +1,16 @@
+$primary: #3292a6;
+$warning: #ffbb33;
+
+#home{
+    img{
+        margin-top: -80px;
+    }
+
+    .select:hover{
+        background: $warning;
+    }
+}
+
+.icon{
+    height: 30px;
+}

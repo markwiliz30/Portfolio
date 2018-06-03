@@ -1,0 +1,41 @@
+.bg-black{
+    background: #000;
+    color: #fff;
+}
+
+#main-header{
+  img{
+    width:100%;
+    height:100%;
+  }
+
+    .port-item{
+        width: 30%;
+        .fa, .fas{
+            font-size: 2em;
+        }
+    }
+
+    .port-item:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+.myModal{
+    img{
+        width: 100%;
+    }
+}
+
+#myBuild{
+    background: url(../src/assets/img/cover.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media(min-width:1199px){
+    .port-item{
+        padding: 3em !important;
+    }
+}
